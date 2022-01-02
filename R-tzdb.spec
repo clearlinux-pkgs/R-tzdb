@@ -4,7 +4,7 @@
 #
 Name     : R-tzdb
 Version  : 0.2.0
-Release  : 7
+Release  : 8
 URL      : https://cran.r-project.org/src/contrib/tzdb_0.2.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/tzdb_0.2.0.tar.gz
 Summary  : Time Zone Database Information
@@ -42,10 +42,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1635350745
+export SOURCE_DATE_EPOCH=1641141932
 
 %install
-export SOURCE_DATE_EPOCH=1635350745
+export SOURCE_DATE_EPOCH=1641141932
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -168,3 +168,5 @@ R CMD check --no-manual --no-examples --no-codoc tzdb || :
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/tzdb/libs/tzdb.so
+/usr/lib64/R/library/tzdb/libs/tzdb.so.avx2
+/usr/lib64/R/library/tzdb/libs/tzdb.so.avx512

@@ -5,7 +5,7 @@
 #
 Name     : R-tzdb
 Version  : 0.4.0
-Release  : 17
+Release  : 18
 URL      : https://cran.r-project.org/src/contrib/tzdb_0.4.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/tzdb_0.4.0.tar.gz
 Summary  : Time Zone Database Information
